@@ -13,5 +13,21 @@ describe "routing: " do
   it "to /about" do
     get("/about").should route_to("pages#about")
   end
-
+  
+  it "to /signout" do
+    get("/signout").should route_to("sessions#destroy")
+  end
+  
+  it "to /auth/failure" do
+    get("/auth/failure").should route_to("sessions#failure")
+  end
+  
+  it "to /auth/:provider/callback" do
+    get("/auth/provider/callback").should route_to(
+      :controller => "sessions",
+      :action => "create",
+      :provider => "provider"
+    )
+  end
+  
 end
