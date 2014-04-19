@@ -27,6 +27,10 @@ gem "therubyracer"
 gem "less-rails"
 gem 'twitter-bootstrap-rails', :git => "git://github.com/seyhunak/twitter-bootstrap-rails.git", :branch => "bootstrap3"
 
+# Use Omniauth
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
