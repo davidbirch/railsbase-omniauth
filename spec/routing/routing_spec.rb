@@ -14,6 +14,10 @@ describe "routing: " do
     get("/about").should route_to("pages#about")
   end
   
+  it "to /signin" do
+    get("/signin").should route_to("sessions#new")
+  end
+  
   it "to /signout" do
     get("/signout").should route_to("sessions#destroy")
   end

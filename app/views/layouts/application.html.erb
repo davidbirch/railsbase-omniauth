@@ -70,7 +70,7 @@
               <li><p class="navbar-text">Signed in as <strong><%= current_user.name %>!</strong></p></li>
               <li><%= link_to "Sign out", signout_path %></li>
             <% else %>
-              <li><%= link_to "Sign in with Twitter", "/auth/twitter" %></li>
+              <li><%= link_to "Sign in with Twitter", signin_path %></li>
             <% end %>
             </ul>
           </div><!--/.well -->
